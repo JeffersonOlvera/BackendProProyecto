@@ -1,0 +1,112 @@
+﻿@model WebApplication3.Models.Movie
+
+@{
+    ViewData["Title"] = "Create Movie";
+}
+
+<div class="page-header mb-4">
+    <h1><i class="bi bi-plus-circle"></i> Create New Movie</h1>
+    <a asp-action="Index" class="btn btn-outline-secondary">
+        <i class="bi bi-arrow-left"></i> Back to List
+    </a>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card shadow-custom">
+            <div class="card-header">
+                <h4 class="mb-0">Movie Information</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                    <div asp-validation-summary="All"></div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label asp-for="Title" class="form-label">
+                                <i class="bi bi-film"></i> Title
+                            </label>
+                            <input asp-for="Title" class="form-control form-control-lg" placeholder="Enter movie title" />
+                            <span asp-validation-for="Title" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label asp-for="Synopsis" class="form-label">
+                                <i class="bi bi-card-text"></i> Synopsis
+                            </label>
+                            <textarea asp-for="Synopsis" class="form-control" rows="4" placeholder="Enter movie synopsis"></textarea>
+                            <span asp-validation-for="Synopsis" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="GenreId" class="form-label">
+                                <i class="bi bi-tags"></i> Genre
+                            </label>
+                            <select asp-for="GenreId" class="form-select" asp-items="ViewBag.GenreId">
+                                <option value="">-- Select Genre --</option>
+                            </select>
+                            <span asp-validation-for="GenreId" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="DirectorId" class="form-label">
+                                <i class="bi bi-person-video3"></i> Director
+                            </label>
+                            <select asp-for="DirectorId" class="form-select" asp-items="ViewBag.DirectorId">
+                                <option value="">-- Select Director --</option>
+                            </select>
+                            <span asp-validation-for="DirectorId" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Duration" class="form-label">
+                                <i class="bi bi-clock"></i> Duration (minutes)
+                            </label>
+                            <input asp-for="Duration" class="form-control" type="number" min="1" max="600" placeholder="e.g., 120" />
+                            <span asp-validation-for="Duration" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="ReleaseDate" class="form-label">
+                                <i class="bi bi-calendar"></i> Release Date
+                            </label>
+                            <input asp-for="ReleaseDate" class="form-control" type="date" />
+                            <span asp-validation-for="ReleaseDate" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <label asp-for="Image" class="form-label">
+                                <i class="bi bi-image"></i> Image URL
+                            </label>
+                            <input asp-for="Image" class="form-control" placeholder="https://example.com/image.jpg" />
+                            <span asp-validation-for="Image" class="text-danger small"></span>
+                            <small class="form-text text-muted">Enter a valid image URL for the movie poster</small>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-x-circle"></i> Cancel
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-check-circle"></i> Create Movie
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

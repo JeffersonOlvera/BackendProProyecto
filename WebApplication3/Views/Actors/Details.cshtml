@@ -1,0 +1,29 @@
+﻿@model WebApplication3.Models.Actor
+
+@{
+    ViewData["Title"] = "Actor Details";
+}
+
+<div class="page-header mb-4">
+    <h1><i class="bi bi-eye"></i> Actor Details</h1>
+    <a asp-action="Index" class="btn btn-outline-secondary">
+        <i class="bi bi-arrow-left"></i> Back to List
+    </a>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <dl class="row">
+            <dt class="col-sm-4 text-white">@Html.DisplayNameFor(model => model.Name)</dt>
+            <dd class="col-sm-8 text-white">@Html.DisplayFor(model => model.Name)</dd>
+            <dt class="col-sm-4 text-white">@Html.DisplayNameFor(model => model.Biography)</dt>
+            <dd class="col-sm-8 text-white">@Html.DisplayFor(model => model.Biography)</dd>
+            <dt class="col-sm-4 text-white">@Html.DisplayNameFor(model => model.BirthDate)</dt>
+            <dd class="col-sm-8 text-white">@Html.DisplayFor(model => model.BirthDate)</dd>
+        </dl>
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-success"><i class="bi bi-pencil"></i> Edit</a>
+    <a asp-action="Index" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Back to List</a>
+</div>

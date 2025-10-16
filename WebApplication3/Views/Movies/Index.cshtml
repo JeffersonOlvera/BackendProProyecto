@@ -1,0 +1,91 @@
+﻿@model IEnumerable<WebApplication3.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<div class="page-header">
+    <h1><i class="bi bi-camera-reels"></i> Movie Collection</h1>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Add New Movie
+    </a>
+</div>
+<form method="get" asp-action="Index" class="row g-3 mb-4">
+    <div class="col-md-4">
+        <label for="GenreId" class="form-label text-white">Genre</label>
+        <select id="GenreId" name="genreId" class="form-select" asp-items="ViewBag.GenreId">
+            <option value="">-- All Genres --</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="DirectorId" class="form-label text-white">Director</label>
+        <select id="DirectorId" name="directorId" class="form-select" asp-items="ViewBag.DirectorId">
+            <option value="">-- All Directors --</option>
+        </select>
+    </div>
+    <div class="col-md-4 d-flex align-items-end">
+        <button type="submit" class="btn btn-white text-danger w-100">
+            <i class="bi bi-funnel"></i> Filter
+        </button>
+    </div>
+</form>
+
+@if (Model.Any())
+{
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col fade-in">
+                <div class="card h-100">
+                    @if (!string.IsNullOrEmpty(item.Image))
+                    {
+                        <img src="@item.Image" class="card-img-top" alt="@item.Title" onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'">
+                    }
+                    else
+                    {
+                        <img src="https://via.placeholder.com/300x400?text=No+Image" class="card-img-top" alt="No image">
+                    }
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary-custom">@item.Title</h5>
+                        <p class="card-text text-muted small mb-2">
+                            <i class="bi bi-tags"></i> @item.Genre.Name
+                        </p>
+                        <p class="card-text text-muted small mb-2">
+                            <i class="bi bi-person-video3"></i> @item.Director.Name
+                        </p>
+                        <p class="card-text flex-grow-1">
+                            @(item.Synopsis.Length > 100 ? item.Synopsis.Substring(0, 100) + "..." : item.Synopsis)
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                                <i class="bi bi-clock"></i> @item.Duration min
+                            </small>
+                            <small class="text-muted">
+                                <i class="bi bi-calendar"></i> @item.ReleaseDate.ToString("MMM yyyy")
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="btn-group w-100" role="group">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary" title="View Details">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-success" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger" title="Delete">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-info text-center" role="alert">
+        <i class="bi bi-info-circle"></i> No movies found. <a asp-action="Create" class="alert-link">Add your first movie</a>!
+    </div>
+}
