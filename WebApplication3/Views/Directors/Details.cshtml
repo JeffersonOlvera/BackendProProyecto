@@ -1,7 +1,7 @@
 ﻿@model WebApplication3.Models.Director
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Director Details";
 }
 
 <h1>Details</h1>
@@ -30,6 +30,41 @@
         </dd>
     </dl>
 </div>
+
+@if (Model.Movies != null && Model.Movies.Any())
+{
+    <div class="card shadow-custom mt-4">
+        <div class="card-header">
+            <h5 class="mb-0"><i class="bi bi-camera-reels"></i> Movies by this Director</h5>
+        </div>
+        <div class="card-body p-0">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Release</th>
+                        <th class="text-end"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model.Movies)
+                {
+                    <tr>
+                        <td>@m.Title</td>
+                        <td>@m.Genre?.Name</td>
+                        <td>@m.ReleaseDate.ToString("yyyy-MM-dd")</td>
+                        <td class="text-end">
+                            <a asp-controller="Movies" asp-action="Details" asp-route-id="@m.Id" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>

@@ -78,6 +78,30 @@
             </div>
         </div>
 
+        <div class="card shadow-custom mb-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="bi bi-people"></i> Cast</h5>
+            </div>
+            <div class="card-body">
+                @if (Model.MovieActors != null && Model.MovieActors.Any())
+                {
+                    <ul class="list-group list-group-flush">
+                        @foreach (var ma in Model.MovieActors)
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                @ma.Actor.Name
+                                <a asp-controller="Actors" asp-action="Details" asp-route-id="@ma.ActorId" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></a>
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <div class="text-muted">No actors assigned.</div>
+                }
+            </div>
+        </div>
+
         <div class="card shadow-custom">
             <div class="card-header">
                 <h5 class="mb-0"><i class="bi bi-info-circle"></i> Additional Information</h5>

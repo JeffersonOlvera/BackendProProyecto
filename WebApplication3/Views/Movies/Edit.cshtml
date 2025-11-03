@@ -18,7 +18,7 @@
                 <h4 class="mb-0">Update Movie Information</h4>
             </div>
             <div class="card-body">
-                <form asp-action="Edit">
+                <form asp-action="Edit" method="post" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
                     <input type="hidden" asp-for="Id" />
 
@@ -83,13 +83,25 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-12 mb-4">
+                        <div class="col-md-6 mb-4">
                             <label asp-for="Image" class="form-label">
-                                <i class="bi bi-image"></i> Image URL
+                                <i class="bi bi-image"></i> Image URL (optional)
                             </label>
                             <input asp-for="Image" class="form-control" placeholder="https://example.com/image.jpg" />
                             <span asp-validation-for="Image" class="text-danger small"></span>
-                            <small class="form-text text-muted">Enter a valid image URL for the movie poster</small>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label"><i class="bi bi-upload"></i> Replace Poster (optional)</label>
+                            <input type="file" name="poster" class="form-control" accept="image/*" />
+                            <small class="form-text text-muted">Uploading a new file will replace the current poster.</small>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <label class="form-label"><i class="bi bi-people"></i> Actors</label>
+                            <select name="selectedActors" multiple class="form-select" asp-items="(MultiSelectList)ViewBag.ActorIds"></select>
+                            <small class="form-text text-muted">Hold Ctrl/Cmd to select multiple actors.</small>
                         </div>
                     </div>
 

@@ -11,7 +11,7 @@ namespace WebApplication3.Models
         public string Title { get; set; }
 
         [StringLength(1000)]
-        public string Synopsis { get; set; }
+        public string? Synopsis { get; set; }
 
         [Range(1, 600)]
         public int Duration { get; set; }
@@ -20,7 +20,7 @@ namespace WebApplication3.Models
         public DateTime ReleaseDate { get; set; }
 
         [StringLength(255)]
-        public string Image { get; set; }
+        public string? Image { get; set; }
 
         [ForeignKey("Genre")]
         public int GenreId { get; set; }

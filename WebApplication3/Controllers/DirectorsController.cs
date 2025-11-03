@@ -34,6 +34,8 @@ namespace WebApplication3.Controllers
             }
 
             var director = await _context.Directors
+                .Include(d => d.Movies)
+                .ThenInclude(m => m.Genre)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (director == null)
             {

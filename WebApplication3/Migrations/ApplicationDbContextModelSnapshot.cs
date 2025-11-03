@@ -48,29 +48,6 @@ namespace WebApplication3.Migrations
                     b.ToTable("Actors");
                 });
 
-            modelBuilder.Entity("WebApplication3.Models.Genre", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Genres");
-                });
-
             modelBuilder.Entity("WebApplication3.Models.Director", b =>
                 {
                     b.Property<int>("Id")
@@ -97,6 +74,29 @@ namespace WebApplication3.Migrations
                     b.ToTable("Directors");
                 });
 
+            modelBuilder.Entity("WebApplication3.Models.Genre", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genres");
+                });
+
             modelBuilder.Entity("WebApplication3.Models.Movie", b =>
                 {
                     b.Property<int>("Id")
@@ -105,17 +105,16 @@ namespace WebApplication3.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("GenreId")
-                        .HasColumnType("int");
-
                     b.Property<int>("DirectorId")
                         .HasColumnType("int");
 
                     b.Property<int>("Duration")
                         .HasColumnType("int");
 
+                    b.Property<int>("GenreId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -123,7 +122,6 @@ namespace WebApplication3.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Synopsis")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -134,9 +132,9 @@ namespace WebApplication3.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GenreId");
-
                     b.HasIndex("DirectorId");
+
+                    b.HasIndex("GenreId");
 
                     b.ToTable("Movies");
                 });
@@ -158,21 +156,21 @@ namespace WebApplication3.Migrations
 
             modelBuilder.Entity("WebApplication3.Models.Movie", b =>
                 {
-                    b.HasOne("WebApplication3.Models.Genre", "Genre")
-                        .WithMany("Movies")
-                        .HasForeignKey("GenreId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("WebApplication3.Models.Director", "Director")
                         .WithMany("Movies")
                         .HasForeignKey("DirectorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Genre");
+                    b.HasOne("WebApplication3.Models.Genre", "Genre")
+                        .WithMany("Movies")
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Director");
+
+                    b.Navigation("Genre");
                 });
 
             modelBuilder.Entity("WebApplication3.Models.MovieActor", b =>
@@ -199,12 +197,12 @@ namespace WebApplication3.Migrations
                     b.Navigation("MovieActors");
                 });
 
-            modelBuilder.Entity("WebApplication3.Models.Genre", b =>
+            modelBuilder.Entity("WebApplication3.Models.Director", b =>
                 {
                     b.Navigation("Movies");
                 });
 
-            modelBuilder.Entity("WebApplication3.Models.Director", b =>
+            modelBuilder.Entity("WebApplication3.Models.Genre", b =>
                 {
                     b.Navigation("Movies");
                 });

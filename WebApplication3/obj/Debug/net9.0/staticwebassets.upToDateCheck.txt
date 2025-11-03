@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,66 +61,70 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\favicon.ico
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\js\site.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation\dist\additional-methods.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery-validation\LICENSE.md
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery\dist\jquery.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery\dist\jquery.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery\dist\jquery.min.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.min.js
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.min.map
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\lib\jquery\LICENSE.txt
-D:\_Proyectos\WebApplication3\WebApplication3\wwwroot\css\site.css
+wwwroot\uploads\movie_095393dda5414245b7274b7b3c046c21.jpg
+wwwroot\uploads\movie_94de28d4c2524f2d962df26badb11b6d.jpg
+wwwroot\uploads\movie_e9a3286568614731a7132ad8794f4b18.webp
+wwwroot\uploads\movie_f04b4f38559b44a48ecfc6384f829744.webp
+wwwroot\uploads\movie_f25c3090730e4b26b590e94adb887455.jpg
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\js\site.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery\dist\jquery.min.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery\dist\jquery.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery\dist\jquery.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation\LICENSE.md
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery\LICENSE.txt
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\favicon.ico
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\css\site.css
+D:\_Proyectos\ESPOL BOOTCAMP\BACKEND_PRO\BackendProProyecto\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.js
